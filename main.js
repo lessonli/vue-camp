@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import App from './app'
+// import App1 from './app1'
+import App2 from './app2'
 
  /*eslint-disable-line no-unused-vars*/
  /**
@@ -33,14 +34,15 @@ import App from './app'
     }
     broadcast(this.$children)
  }
- /* eventBus 等于公开了一个 $on $emit 供全局调用 */
+ /* eventBus 等于公开了一个 $on $emit 供全局调用 发布订阅 */
  Vue.prototype.$bus = new Vue()
 const Vm = new Vue({
     created() {
         console.log(Vm)
     },
     el: "#app",
-    render: h => h(App)
+    // render: h => h(App1)
+    render: h => h(App2)
 })
 
 console.log(Vm)
