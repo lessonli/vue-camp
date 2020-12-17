@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import Parents from './components_communication/companents/parents'
+  import Parents from './companents/parents'
   export default {
     name: 'App',
     components: {
